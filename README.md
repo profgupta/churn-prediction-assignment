@@ -26,3 +26,28 @@ The primary objective is to build and evaluate classification models to predict 
 - Visualize model performance through ROC curves and probability distributions to understand prediction
 
 
+## Tasks
+
+1. **Data Preprocessing**:
+   - Implement the `load_data` function in `churn_prediction.py` to load the dataset (`customer_churn.csv`).
+   - Implement the `preprocess_data` function to:
+     - Encode the categorical `contract_type` feature using one-hot encoding.
+     - Scale numerical features (`age`, `tenure`, `monthly_charges`) using `StandardScaler`.
+     - Split the data into features (X) and target (y).
+
+2. **Model Training**:
+   - Implement the `train_models` function to:
+     - Split the data into training and testing sets (80-20 split).
+     - Train three models: Logistic Regression, Decision Tree, and Random Forest.
+
+3. **Model Evaluation**:
+   - Implement the `evaluate_models` function to:
+     - Compute accuracy and AUROC scores for each model.
+     - Return a dictionary or DataFrame with the results.
+
+4. **Visualization**:
+   - Implement the `plot_roc_curves` function to plot ROC curves for all three models.
+   - Implement the `plot_probability_distributions` function to plot the probability distributions of predictions.
+
+5. **Testing**:
+   - Run
