@@ -1,12 +1,28 @@
 # Customer Churn Prediction Assignment
 
 ## Overview
-In this assignment, you will build and compare classification models to predict whether a customer will churn (leave the service) based on features like age, tenure, monthly charges, and contract type. You will use Python, scikit-learn, and pandas to preprocess data, train three different models (Logistic Regression, Decision Tree, and Random Forest), and evaluate their performance.
+In this assignment, you will build and compare classification models to predict whether a customer will churn (leave the service) based on features like age, tenure, monthly charges, and contract type. You will use Python, scikit-learn, pandas, matplotlib, and seaborn to preprocess the data, train three different models (Logistic Regression, Decision Tree, and Random Forest), evaluate their performance, and visualize the results.
 
-## Learning Objectives
-- Understand the process of building and comparing classification models.
-- Practice data preprocessing and feature engineering.
-- Train and evaluate machine learning models using Logistic Regression, Decision Tree, and Random Forest.
-- Write unit tests to validate your code.
+
+
+
+## Problem Statement
+Customer churn is a critical issue for businesses, especially in subscription-based industries like telecommunications, streaming services, and financial services. Churn occurs when a customer discontinues their service, leading to loss of revenue and increased acquisition costs for replacing lost customers. The goal of this assignment is to build predictive models to identify customers at risk of churning based on their demographic and behavioral data, enabling proactive retention strategies.
+
+## Dataset Description
+A synthetic dataset (`customer_churn.csv`) is provided under data folder. The data include the following features:
+- **age**: Age of the customer (integer, range: 18 to 80 years).
+- **tenure**: Number of months the customer has been with the service (integer, range: 1 to 60 months).
+- **monthly_charges**: Monthly bill amount for the customer (float, range: $20 to $120).
+- **contract_type**: Type of contract the customer has (categorical: 'Month-to-Month', 'One-Year', 'Two-Year').
+- **churn**: Target variable indicating whether the customer churned (binary: 0 = no churn, 1 = churn).
+
+
+## Objective
+The primary objective is to build and evaluate classification models to predict customer churn. Specifically:
+- Develop and compare three classification models: Logistic Regression, Decision Tree, and Random Forest.
+- Preprocess the data by encoding categorical variables and scaling numerical features.
+- Evaluate model performance using accuracy and AUROC (Area Under the Receiver Operating Characteristic Curve) scores.
+- Visualize model performance through ROC curves and probability distributions to understand prediction
 
 
